@@ -16,14 +16,29 @@
          2. not all native features are available for hybrid apps.
          3. may not provide true native experience considering the user interaction.
 
-3. Explain about the "building blocks" involved in an ionic Hybrid Application
+3. Explain about the "building blocks" involved in an ionic Hybrid Application.
 
-4. Explain and demonstrate ways to debug Hybrid Mobile Applications Running on a real device
+    HTML, CSS, and JavaScript are the "building blocks" of ionic Hybrid applications.
 
-5. Explain when and why CORS is a problem for Hybrid Mobile Applications
+4. Explain and demonstrate ways to debug Hybrid Mobile Applications Running on a real device.
+
+   You can debug hybrid apps in computers browser on simulators or emulators, although they can be quite slow to start.
+   Testing is possible also on mobile browser.
+   testing as a native app, if you are developing on Android device just plug your phon and run it.
+
+5. Explain when and why CORS is a problem for Hybrid Mobile Applications.
+
+   CORS is problem while we develop app locally and we need to access data from some API. Problem occurs when we using
+   ionic serve and we test our hybrid app in our browser.
+   This happens due to the browser’s security policies, which essentially a way to block access to data
+   from other domains. This applies to XMLHttpRequests (XHR) requests, which are also known as AJAX requests made with
+   JavaScript to load data. When using Ionic and Angular, any requests made to another domain fall into this category
+   and are subject to this security policy.
 
 6. Explain how and why it is possible for a Hybrid Application to access native phone devices like location,
    calendar etc.
+
+   Hybrid apps can access phone devices with utilizing a mobile platforms WebView hosted inside a native container.
 
 7. Explain using an example the "fundamentals" of an ionic application.
 
