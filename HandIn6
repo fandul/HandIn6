@@ -42,5 +42,25 @@
 
 7. Explain using an example the "fundamentals" of an ionic application.
 
+   Ionic fundamentals is in HTML, specific ionic directives are used as in this example:
+
+    <ion-side-menu-content>
+    	<ion-header-bar class="bar-dark">
+            <h1 class="title">Todo</h1>
+        <!-- New Task button-->
+        <button class="button button-icon" ng-click="newTask()">
+          <i class="icon ion-compose"></i>
+        </button>
+          </ion-header-bar>
+          <ion-content>
+    	  <!-- our list and list items-->
+    	  <ion-list>
+    	  <ion-item ng-repeat="task in tasks">
+    	  {{task.title}}
+    	  </ion-item>
+    	  </ion-list>
+          </ion-content>
+        </ion-side-menu-content>
+        
 8. Explain using an example how your Hybrid Application communicates with a backend and how CORS
    problems were solved (if any)
